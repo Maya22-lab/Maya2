@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+/*Nav bar*/
+
+.navbar {
+    list-style: none;
+    background-color: rgb(27, 8, 83);
+    width: 100%;
+    border-radius: 40px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 200px;
+    width: 100px;
+}
+
+.navbar a:hover {
+    background-color: rgba(245, 236, 239, 0.089);
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+ul {
+
+    list-style: none;
+    color: darkgoldenrod;
+    
+}
+.navbar ul{
+    color: darkgoldenrod;
+    position: sticky;
+    display: flex;
+    gap: 25px;
+    margin-right: 70px;
+}
+.navbar ul li a{
+  color: beige;
+}
+.slider {
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 100px;
+    box-shadow: 0 4px 20px rgba(165, 100, 100, 0.2);
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 0%;
+    position: relative ;
+    padding: auto;
+  }
+
+  .slides {
+    display: flex;
+    width: 700%;
+    height: 500%;
+    animation: slide 10s infinite;
+  }
+
+  .slides img {
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  @keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -400px; }
+    45% { margin-left: -400px; }
+    50% { margin-left: -900px; }
+    70% { margin-left: -900px; }
+    75% { margin-left: -1200px; }
+    95% { margin-left: -1200px; }
+    100% { margin-left: -1600px; }
+  }
+  .texthead{
+    font-weight: 700;
+    text-align: center;
+ margin-top:100px ;
+ margin-left: auto;
+ color: rgb(54,74,8);
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 300;
+     font-style: normal;
+  }
+  #header:hover{
+    animation:glow ;
+    animation-duration: 2s;
+  }
+  @keyframes glow{
+    50% {text-shadow: 0px 0px 50px yellow } 
+  }
+  
+#header{
+    font-size: 5em;
+
+    font-weight:bold;
+  }
+  .oblisk{
+    width: 300px;
+    height: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    animation: rotate  infinite;
+     animation-duration: 5s;
+  }
+  @keyframes rotate{
+    100%{transform:rotate(360deg) ;}
+  }
+  .oblisk:hover{
+    transform:scale(1.03) ;
+  }
+  .gallery-first{
+    border-color: #2a2a2a;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .statue-image{
+    width: 100%;
+    height: auto;
+    border: 1px solid #555;
+    border-radius: 5px;
+  }
+  .caption{
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: rgba(24, 3, 48, 0.08);
+    color: rgb(125, 13, 13);
+    padding: 10px;
+    border-radius:5px;
+  }
+  .first_half{
+    display: flex;
+    justify-content:center;
+    gap:50px;
+}
+.gallery-first:hover{
+  transition: ease-in-out;
+    transform:scale(1.07) ;
+}
+#bust{
+    height: fit-content;
+
+
+}
+.ho{
+  margin-left: 31%;
+  font-size: 3em;
+  color: hsl(270, 82%, 27%);
+  animation:glow2 infinite ;
+  animation-duration: 2s;
+}
+@keyframes glow2{
+  70% {text-shadow: 0px 0px 50px rgb(6, 1, 12) } 
+
+
+
+}
+.H-eye{
+    width: 300px;
+    transform: translatex(200%);
+}
+.vid1{
+  height: fit-content;
+  width: 400px;
+  transform: translate(50px,-10px);
+}
+.vid2{
+  height: fit-content;
+  width: 400px;
+  transform: translate(270%,-102%);
+
+}
+footer{
+  background-color: rgb(227, 133, 133);
+}
+.footercontainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialicons{
+  display: flex;
+  justify-content: center;
+}
+.socialicons a{
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(170, 232, 232);
+  border-radius: 50%;
+}
+.socialicons a i{
+  font-size: 2em;
+  opacity: 0.9;
+
+}
+.socialicons a :hover{
+  background-color: #817676;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.footerbottom {
+  background-color: rgb(210, 132, 220);
+  padding: 20px;
+  text-align: center;
+}
+
+.footerbottom p {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style:normal;
+  font-variation-settings:
+  100;
+}
